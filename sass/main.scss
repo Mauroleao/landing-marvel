@@ -1,0 +1,12 @@
+@use 'base/variaveis' as *;
+@use 'base/reset';
+@use 'components/buttons';
+@use 'layout/sections';
+
+// Estilos gerais do header e footer podem ser adicionados aqui ou em seus próprios arquivos em layout/
+.main-header, .main-footer {
+    padding: 20px;
+    text-align: center;
+    background: $text-color;
+    color: $light-color;
+}

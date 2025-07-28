@@ -1,0 +1,26 @@
+{
+  "name": "landing-marvel",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000l\u0000a\u0000n\u0000d\u0000i\u0000n\u0000g\u0000-\u0000m\u0000a\u0000r\u0000v\u0000e\u0000l\u0000\r\u0000 \u0000",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauroleao/landing-marvel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mauroleao/landing-marvel/issues"
+  },
+  "homepage": "https://github.com/Mauroleao/landing-marvel#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^4.0.0",
+    "sass": "^1.89.2"
+  }
+}
