@@ -224,7 +224,7 @@ i {
 }
 .card img {
   width: 100%;
-  max-width: 354px;
+  height: auto;
   transition: transform 0.2s;
 }
 
@@ -256,7 +256,8 @@ i {
     flex-direction: column;
   }
   .card img {
-    max-width: 740px;
+    width: 100%;
+    height: auto;
   }
 }
 .footer {
