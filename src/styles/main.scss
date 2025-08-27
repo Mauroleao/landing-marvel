@@ -1,13 +1,13 @@
+@use "colors" as *;
+@use "header";
+@use "layout";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
 }
-
-@import "colors";
-@import "_header";
-@import "_layout";
 
 body{
     font-family: 'Sora', sans-serif;
