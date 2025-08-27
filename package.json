@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp watch",
+    "dev": "gulp dev",
     "build": "gulp",
+    "serve:dist": "npx http-server dist -p 5501",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Mauroleao/landing-saas#readme",
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "gulp": "^5.0.1",
     "gulp-sass": "^6.0.1",
     "sass": "^1.90.0"
@@ -150,8 +152,8 @@
     "stream-composer": "^1.0.2",
     "stream-exhaust": "^1.0.2",
     "streamx": "^2.22.1",
-    "string-width": "^4.2.3",
     "string_decoder": "^1.3.0",
+    "string-width": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "supports-color": "^7.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",

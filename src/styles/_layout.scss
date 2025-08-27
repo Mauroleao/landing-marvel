@@ -13,7 +13,7 @@
 .bg-home::before{
     content: "";
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("/src/img/iron-man-marvel.svg");
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("/img/iron-man-marvel.svg");
     left:0;
     top:0;
     width: 100%;
