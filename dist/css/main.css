@@ -352,6 +352,7 @@ img {
   background-color: #fff;
   min-width: 100px; /* ensure minimum size */
   min-height: 100px;
+  border: 2px solid red;
 }
 
 a {
