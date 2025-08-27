@@ -51,6 +51,10 @@ i {
   margin-top: 14px;
 }
 
+.header-logo img {
+  width: 160px;
+}
+
 @media screen and (max-width: 768px) {
   .header-content {
     width: 100%;
@@ -343,7 +347,9 @@ svg {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid red; /* temporary to debug */
 }
 
 a {
