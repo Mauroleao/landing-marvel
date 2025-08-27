@@ -8,20 +8,11 @@
 
 .bg-home{
     position: relative;
-}
-
-.bg-home::before{
-    content: "";
-    position: absolute;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../img/iron-man-marvel.svg");
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    background-position: center;
 }
 
 .hero{
