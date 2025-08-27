@@ -10,11 +10,18 @@ function styles() {
 }
 
 function images() {
-    return gulp.src('./src/img/**/*');
+    return gulp.src('./src/img/**/*')
+        .pipe(gulp.dest('./dist/img'));
 }
 
-exports.default = gulp.series(styles, images);
+function html() {
+    return gulp.src('./index.html')
+        .pipe(gulp.dest('./dist'));
+}
+
+exports.default = gulp.series(styles, images, html);
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
     gulp.watch('./src/img/**/*', gulp.parallel(images));
+    gulp.watch('./index.html', gulp.parallel(html));
 };
