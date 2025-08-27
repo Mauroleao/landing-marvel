@@ -26,6 +26,28 @@ function html() {
         .pipe(gulp.dest('./dist'));
 }
 
+// Build to public (for deploy)
+function stylesPublic() {
+    return gulp.src('./src/styles/*.scss')
+        .pipe(sass({ outputStyle: 'compressed'}))
+        .pipe(gulp.dest('./public/css'));
+}
+
+function imagesPublic() {
+    return gulp.src('./src/img/**/*')
+        .pipe(gulp.dest('./public/img'));
+}
+
+function scriptsPublic() {
+    return gulp.src('./src/scripts/**/*')
+        .pipe(gulp.dest('./public/scripts'));
+}
+
+function htmlPublic() {
+    return gulp.src('./index.html')
+        .pipe(gulp.dest('./public'));
+}
+
 function serve() {
     browserSync.init({ server: './dist' });
 
@@ -43,3 +65,6 @@ exports.watch = function() {
     gulp.watch('./src/scripts/**/*', gulp.parallel(scripts));
     gulp.watch('./index.html', gulp.parallel(html));
 };
+
+// Public build (no server)
+exports.buildPublic = gulp.series(stylesPublic, imagesPublic, scriptsPublic, htmlPublic);

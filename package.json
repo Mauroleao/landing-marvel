@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp",
+    "build:public": "gulp buildPublic",
     "serve:dist": "npx http-server dist -p 5501",
+    "serve:public": "npx http-server public -p 5503",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
