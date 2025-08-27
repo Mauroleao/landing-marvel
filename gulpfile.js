@@ -12,7 +12,7 @@ function styles() {
 }
 
 function images() {
-    return gulp.src('./src/img/**/*')
+    return gulp.src('./src/img/**/*', { encoding: false })
         .pipe(gulp.dest('./dist/img'));
 }
 
@@ -34,7 +34,7 @@ function stylesPublic() {
 }
 
 function imagesPublic() {
-    return gulp.src('./src/img/**/*')
+    return gulp.src('./src/img/**/*', { encoding: false })
         .pipe(gulp.dest('./public/img'));
 }
 
