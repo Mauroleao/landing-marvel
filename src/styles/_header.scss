@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 header{
     width: 100%;
 }
@@ -41,7 +43,7 @@ i{
     transition: background-color 0.8s;
 }
 
-.header-button:houver{
+.header-button:hover{
     border: 1px solid $red-light;
     background-color: $red-light;
 }
