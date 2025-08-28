@@ -1,4 +1,4 @@
-# Landing Marvel — Guia de Execução (PT-BR)
+# Landing Marvel — Guia de Execução
 
 Este projeto é um site estático que usa Gulp + Dart Sass para compilar os arquivos SCSS em CSS (saída em `dist/css`). O HTML principal é `index.html` na raiz do projeto.
 
